@@ -1,0 +1,59 @@
+.container  {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+.pickerbox-one{
+   margin-top: 100rpx;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+}
+.pickerbox-two{
+   margin-top: 100rpx;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+}
+
+.picker{
+  width: 100%;
+  margin-top: 20rpx;
+  align-items:center;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #F5F2F0;
+  text-align: center;
+}
+
+.pickerText{
+  color: #686868;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.pickerTextChoosed{
+  color: #6638F0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.button-hover{
+  background-color: red;
+}
+
+.button{
+  margin-top: 300rpx;
+  font-weight: bold;
+}
+
+.textTips{
+  
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10rpx;
+
+}
+

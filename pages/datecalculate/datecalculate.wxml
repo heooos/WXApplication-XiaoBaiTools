@@ -1,0 +1,40 @@
+<!-- 根布局 -->
+<view class="container">
+ 
+
+  <view class='pickerbox-one'>
+    <!--第一个picker  -->
+      <text class='textTips'>
+          {{tip_one}}
+      </text>
+
+      <picker class="picker" mode="date" value="{{today_date}}" start="1970-01-01" end="2055-12-31" bindchange="bindDateChangeFirst">
+        <view wx:if="{{first_date == null}}" class="pickerText">
+          {{today_date}}
+        </view>
+        <view wx:else class="pickerTextChoosed">
+          {{first_date}}
+        </view>
+      </picker>
+
+  </view>
+  <view class='pickerbox-two'>
+    <!--第二个picker  -->
+    <text class='textTips'>{{tip_two}}</text>
+
+    <picker class="picker" mode="date" value="{{today_date}}" start="1970-01-01" end="2055-12-31" bindchange="bindDateChangeSecond">
+      <view wx:if="{{second_date == null}}" class="pickerText">
+         {{today_date}}
+      </view>
+      <view wx:else class="pickerTextChoosed">
+         {{second_date}}
+      </view>
+    </picker>
+  </view>
+
+  <button hover-class="button-hover" bindtap='startCalculate' disabled = "{{btnEnable}}" class='button'>
+      {{tip_button}}
+  </button>
+    
+
+</view>

@@ -1,0 +1,2 @@
+<!--pages/calculate/calculate.wxml-->
+<text>{{page}}.wxml</text>
