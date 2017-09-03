@@ -32,9 +32,19 @@
     </picker>
   </view>
 
-  <button hover-class="button-hover" bindtap='startCalculate' disabled = "{{btnEnable}}" class='button'>
+<!-- bindtap='startCalculate'  -->
+  <button hover-class="button-hover"bindtap="startCalculate" disabled = "{{btnEnable}}" class='button'>
       {{tip_button}}
   </button>
     
+<!--********************************************************  -->
+   <view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{showModalStatus}}">  
+        <view class="buydes-dialog-container-top" bindtap="hideModal"></view>  
+        <view class="container-column buydes-dialog-container-bottom">  
+           
+              <view bindtap="hideModal" class="buydes-dialog-container-bottom-item" >取消</view>  
+         
+        </view>  
+    </view>
 
 </view>

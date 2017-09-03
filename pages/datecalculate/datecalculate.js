@@ -2,7 +2,6 @@
 const app = getApp();//get App Object!
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -43,7 +42,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
+
   },
 
   /**
@@ -106,8 +106,9 @@ Page({
     }
     console.log(this.data.btnEnable);
   },
-  //custom functions----------
 
+
+  //custom functions----------
 
   //获取今天的日期并转化为yyyy-MM-dd格式
   getTodayDate:function(){
@@ -133,8 +134,18 @@ Page({
   //开始计算
   startCalculate:function(){
     let result = this.dateDiff(this.data.first_date, this.data.second_date);
+    wx.showModal({
+      title: '计算结果',
+      showCancel:false,
+      confirmText:"知道了！",
+      confirmColor:"#D00914",
+      content: '两个日期相差' + result+"天"
+    })
+    
     console.log("相差"+result);
+    
   },
+
   //计算天数差的函数，通用  
   //sDate1和sDate2是2006-12-18格式 
   //转换为12-18-2006格式
@@ -147,6 +158,6 @@ Page({
     oDate2  =  new Date(aDate[1] + '-' + aDate[2] + '-' + aDate[0])  
     iDays  =  parseInt(Math.abs(oDate1 - oDate2) / 1000 / 60 / 60 / 24)   
     return  iDays  
-  } 
-
+  }
+ 
 })
