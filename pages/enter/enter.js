@@ -26,6 +26,13 @@ Page({
       url: '../datecalculate/datecalculate',
     })
   },
+
+  jumpToTransform:function(){
+    wx.navigateTo({
+      url: '../transform/transform',
+    })
+  },
+
   jumpToWell:function(){
     wx.showModal({
       title: '提示',

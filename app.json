@@ -2,7 +2,8 @@
   "pages":[
     "pages/enter/enter",
     "pages/datecalculate/datecalculate",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/transform/transform"
   ],
   "window":{
     "backgroundTextStyle":"light",
