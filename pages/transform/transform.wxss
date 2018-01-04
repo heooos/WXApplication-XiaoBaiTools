@@ -1,0 +1,54 @@
+.container{
+  display: flex;
+
+}
+
+.text-tips{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20rpx;
+}
+
+.placeholder{
+  font-weight: bold;
+  font-size: 35rpx;
+}
+
+.input{
+
+  height: 100%;
+  padding-left: 20rpx;
+  font-weight: bold;
+  font-size: 35rpx;
+}
+
+.result-text{
+  font-weight: bold;
+  font-size: 45rpx;
+  color: red;
+}
+
+.input-box{
+   display: flex;
+  flex-direction: column;
+
+}
+
+.input-box-view{
+  height: 100rpx;
+  background-color: #F5F2F0;
+  display: flex;
+  flex-direction: row;
+}
+
+.result-box{
+  margin-top: 50rpx;
+  background-color: #F5F2F0;
+  margin-bottom:150rpx;
+  height: 240rpx;
+  display: flex;
+  flex-direction: column; /*主轴方向 从左向右  */
+  align-items: center;/*交叉轴对齐方式  */
+  justify-content: center;/*主轴上的对齐方式  */
+  
+}

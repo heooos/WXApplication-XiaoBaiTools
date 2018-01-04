@@ -4,7 +4,7 @@
 
   <view class='pickerbox-one'>
     <!--第一个picker  -->
-      <text class='textTips'>
+      <text class='text-tips'>
           {{tip_one}}
       </text>
 
@@ -20,7 +20,7 @@
   </view>
   <view class='pickerbox-two'>
     <!--第二个picker  -->
-    <text class='textTips'>{{tip_two}}</text>
+    <text class='text-tips'>{{tip_two}}</text>
 
     <picker class="picker" mode="date" value="{{today_date}}" start="1970-01-01" end="2055-12-31" bindchange="bindDateChangeSecond">
       <view wx:if="{{second_date == null}}" class="pickerText">

@@ -1,0 +1,18 @@
+<!--enter.wxml-->
+<view class='container' >
+
+    <view class='result-box'>
+         <text wx:if="{{inputValue == -1}}" class='result-text' style='color:#BDBDBD'>请在下方输入要转换的数字</text>
+         <text wx:else class='result-text' >{{inputValue}}</text>
+    </view>
+
+
+    <view class='input-box'>
+        <text class='text-tips'>请输入要转换的数字</text>
+        <view class='input-box-view'>
+         <input class='input' bindinput='firstBindKeyInput' type='number' maxlength='8' placeholder-class='placeholder' placeholder='整数部分'></input>
+         <text style='width:30rpx;font-weight:blod,margin-left:20rpx;background-color:#fff;display: inline-flex;flex-direction:column;justify-content:center;font-weight: bold;align-items:center;'>:</text>
+         <input class='input' bindinput='secondBindKeyInput' type='number' maxlength='2' placeholder-class='placeholder' placeholder='小数部分'></input>
+        </view>  
+    </view>
+</view>
